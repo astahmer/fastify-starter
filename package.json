@@ -1,0 +1,28 @@
+{
+    "name": "server",
+    "scripts": {
+        "dev-start": "ts-node -r tsconfig-paths/register ./src/main.ts",
+        "dev": "nodemon",
+        "env": "yarn yenv print env.yaml development -f -s",
+        "env:prod": "yarn yenv print env.prod.yaml production -f -s",
+        "prebuild": "rimraf dist && rimraf temp",
+        "build": "yarn prebuild && ttsc -b tsconfig.build.json --force",
+        "start": "NODE_ENV=production node dist/main.js"
+    },
+    "dependencies": {
+        "@pastable/core": "^0.1.12",
+        "fastify": "^3.19.2",
+        "ws": "^7.5.3"
+    },
+    "devDependencies": {
+        "@types/node": "^16.4.1",
+        "@types/ws": "^7.4.7",
+        "nodemon": "^2.0.12",
+        "ts-node": "^10.1.0",
+        "tsconfig-paths": "^3.10.1",
+        "typescript": "^4.3.5"
+    },
+    "engines": {
+        "node": "^14.x"
+    }
+}
