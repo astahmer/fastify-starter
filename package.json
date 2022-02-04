@@ -6,7 +6,7 @@
         "env": "yarn yenv print env.yaml development -f -s",
         "env:prod": "yarn yenv print env.prod.yaml production -f -s",
         "prebuild": "rimraf dist && rimraf temp",
-        "build": "yarn prebuild && ttsc -b tsconfig.build.json --force",
+        "build": "yarn prebuild && tsc",
         "start": "NODE_ENV=production node dist/main.js"
     },
     "dependencies": {
@@ -18,11 +18,12 @@
         "@types/node": "^17.0.14",
         "@types/ws": "^8.2.2",
         "nodemon": "^2.0.15",
+        "rimraf": "^3.0.2",
         "ts-node": "^10.4.0",
         "tsconfig-paths": "^3.12.0",
         "typescript": "^4.5.5"
     },
     "engines": {
-        "node": "^14.x"
+        "node": ">=14.x"
     }
 }
