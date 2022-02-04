@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@pastable/core': ^0.1.17
+  '@pastable/utils': ^0.1.17
   '@types/node': ^17.0.14
   '@types/ws': ^8.2.2
   fastify: ^3.27.1
@@ -13,7 +13,7 @@ specifiers:
   ws: ^8.4.2
 
 dependencies:
-  '@pastable/core': 0.1.17
+  '@pastable/utils': 0.1.17
   fastify: 3.27.1
   ws: 8.4.2
 
@@ -46,17 +46,16 @@ packages:
       ajv: 6.12.6
     dev: false
 
-  /@pastable/core/0.1.17:
-    resolution: {integrity: sha512-r7Np8mR15N316S89SvSjqytJfjvCT/zR+5lQUHfzcTnBmJh9gBngIAT3D9MtmXFwcdUJRsB1+aLh4jL0l1SJVg==}
+  /@pastable/typings/0.0.8:
+    resolution: {integrity: sha512-GSqDTkiU1EWTgausgl3M6ZS2DsHajYOVwNvI2rRL0qPXrT9cmhvi2TVSe8BjQArV+sQER/88He72Nsg1dq30ng==}
     engines: {node: '>=14.x'}
-    peerDependencies:
-      jotai: '*'
-      react: '>=17'
-    peerDependenciesMeta:
-      jotai:
-        optional: true
-      react:
-        optional: true
+    dev: false
+
+  /@pastable/utils/0.1.17:
+    resolution: {integrity: sha512-mUi6W/Z6aqJxGZpgMR5VyJDrb6yZIgULIkoHqgR0OAlsa50RHWTOqrcXq9FtwhBD5e0GbBtctImStX9aPzZs5A==}
+    engines: {node: '>=14.x'}
+    dependencies:
+      '@pastable/typings': 0.0.8
     dev: false
 
   /@sindresorhus/is/0.14.0:

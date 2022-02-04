@@ -10,7 +10,7 @@
         "start": "NODE_ENV=production node dist/main.js"
     },
     "dependencies": {
-        "@pastable/core": "^0.1.17",
+        "@pastable/utils": "^0.1.17",
         "fastify": "^3.27.1",
         "ws": "^8.4.2"
     },

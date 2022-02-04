@@ -15,6 +15,7 @@
         "strictNullChecks": false,
         "forceConsistentCasingInFileNames": true,
         "baseUrl": "./src",
+        "skipLibCheck": true,
         "paths": {
             "@/*": ["./*"]
         }
